@@ -89,9 +89,9 @@
     cell.movieDescriptionLabel.text = movieObject.description;
     //NSLog(@"%@", [NSString stringWithFormat:@"%@", movieObject.thumbnailImage ]);
     
-    cell.posterImageView.image = [movieObject getThumbnailImageData];
-    //NSURL *imageURL = [NSURL URLWithString:movieObject.thumbnailImage];
-    //[cell.posterImageView setImageWithUrl:imageURL];
+    //cell.posterImageView.image = [movieObject getThumbnailImageData];
+    NSURL *imageURL = [NSURL URLWithString:movieObject.thumbnailImage];
+    [cell.posterImageView setImageWithURL:imageURL];
     
     return cell;
 }

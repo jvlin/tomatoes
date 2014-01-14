@@ -8,6 +8,7 @@
 
 #import "MovieViewController.h"
 #import "Movie.h"
+#import "UIImageView+AFNetworking.h"
 
 @interface MovieViewController ()
 
@@ -35,7 +36,9 @@
 {
     [super viewDidLoad];
     self.navigationItem.title = self.movie.title;
-    self.movieProfileImageView.image = [self.movie getProfileImageData];
+    //self.movieProfileImageView.image = [self.movie getProfileImageData];
+    NSURL *imageURL = [NSURL URLWithString:self.movie.profileImage];
+    [self.movieProfileImageView setImageWithURL:imageURL];
     self.movieTitleLabel.text = self.movie.title;
     self.movieCastLabel.text = self.movie.cast;
     self.movieDescriptionLabel.text = self.movie.description;
