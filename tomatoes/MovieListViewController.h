@@ -1,5 +1,5 @@
 //
-//  MoveListViewController.h
+//  MovieListViewController.h
 //  tomatoes
 //
 //  Created by Joey Lin on 1/10/14.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MoveListViewController : UITableViewController
+@interface MovieListViewController : UITableViewController
 
 @end

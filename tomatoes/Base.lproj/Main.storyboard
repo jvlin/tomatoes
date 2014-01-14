@@ -54,10 +54,10 @@
             </objects>
             <point key="canvasLocation" x="1209" y="-248"/>
         </scene>
-        <!--Move List View Controller - Box Office-->
+        <!--Movie List View Controller - Box Office-->
         <scene sceneID="ESq-MU-bza">
             <objects>
-                <tableViewController id="ve0-vJ-h1S" customClass="MoveListViewController" sceneMemberID="viewController">
+                <tableViewController id="ve0-vJ-h1S" customClass="MovieListViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="135" sectionHeaderHeight="22" sectionFooterHeight="22" id="ssz-GK-Cg0">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

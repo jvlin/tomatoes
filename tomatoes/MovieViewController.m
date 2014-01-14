@@ -35,7 +35,7 @@
 {
     [super viewDidLoad];
     self.navigationItem.title = self.movie.title;
-	self.movieProfileImageView.image = [self.movie getProfileImageData];
+    self.movieProfileImageView.image = [self.movie getProfileImageData];
     self.movieTitleLabel.text = self.movie.title;
     self.movieCastLabel.text = self.movie.cast;
     self.movieDescriptionLabel.text = self.movie.description;

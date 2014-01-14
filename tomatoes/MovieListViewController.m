@@ -1,23 +1,24 @@
 //
-//  MoveListViewController.m
+//  MovieListViewController.m
 //  tomatoes
 //
 //  Created by Joey Lin on 1/10/14.
 //  Copyright (c) 2014 codepath. All rights reserved.
 //
 
-#import "MoveListViewController.h"
+#import "MovieListViewController.h"
 #import "MovieViewController.h"
 #import "MovieCell.h"
 #import "Movie.h"
+#import "UIImageView+AFNetworking.h"
 
-@interface MoveListViewController ()
+@interface MovieListViewController ()
 
 @property (nonatomic, strong) NSArray *movies;
 
 @end
 
-@implementation MoveListViewController
+@implementation MovieListViewController
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -30,7 +31,7 @@
 }
 
 - (id)initWithCoder:(NSCoder *)aDecoder
-{
+{ 
     self = [super initWithCoder:aDecoder];
     if (self) {
         NSString *url = @"http://api.rottentomatoes.com/api/public/v1.0/lists/dvds/top_rentals.json?apikey=g9au4hv6khv6wzvzgt55gpqs";
@@ -89,6 +90,8 @@
     //NSLog(@"%@", [NSString stringWithFormat:@"%@", movieObject.thumbnailImage ]);
     
     cell.posterImageView.image = [movieObject getThumbnailImageData];
+    //NSURL *imageURL = [NSURL URLWithString:movieObject.thumbnailImage];
+    //[cell.posterImageView setImageWithUrl:imageURL];
     
     return cell;
 }
